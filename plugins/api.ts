@@ -3,8 +3,7 @@ import { NuxtAxiosInstance } from '@nuxtjs/axios'
 import aspida from '@aspida/axios'
 import api from '~/server/api/$api'
 
-const createInstance = (axios: NuxtAxiosInstance) =>
-  api(aspida(axios))
+const createInstance = (axios: NuxtAxiosInstance) => api(aspida(axios))
 
 type ApiInstance = ReturnType<typeof createInstance>
 
